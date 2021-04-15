@@ -31,7 +31,7 @@ function section(id, lower) {
 function showTabs() {
 	$('body, html').css('overflow-y', 'hidden')
 	$('#tabs-m').animate({ padding: '30px' }, 0);
-	$('#tabs-m').animate({ height: screen.height }, 200);
+	$('#tabs-m').animate({ height: screen.height }, 0);
 	if ($('html').scrollTop() < 640) {
 		$('#menu, #tabs-m').css('background', 'rgba(0, 0, 0, 0.6)')
 	}
@@ -43,7 +43,7 @@ function hideTabs() {
 	if ($('html').scrollTop() < 640) {
 		$('#menu, #tabs-m').css('background', 'transparent')
 	}
-	$('#tabs-m').animate({ height: 0 }, 200);
+	$('#tabs-m').animate({ height: 0 }, 0);
 	$('#tabs-m').animate({ padding: '0px' }, 0);
 	$('#menu-button').attr('href', 'javascript:showTabs()');
 }
