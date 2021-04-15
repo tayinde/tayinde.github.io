@@ -49,5 +49,5 @@ function hideTabs() {
 }
 
 $(window).click((event) => {
-	if (event.pageY > 120) hideTabs();
+	if (event.pageY > $('#menu').offset().top) hideTabs();
 })
