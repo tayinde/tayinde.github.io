@@ -10,10 +10,12 @@ $(window).scroll(() => {
 		$('#menu, #tabs-m').css('background', mainColor)
 		$('#menu, #tabs-m').css('box-shadow', '7px 7px 7px rgb(0, 0, 0, 0.2)')
 		$('.tab').css('color', 'white');
+		$('#menu-button').css('filter', 'none')
 	} else {
 		$('.tab').css('color', tabColor);
 		$('#menu, #tabs-m').css('box-shadow', 'none')
 		$('#menu, #tabs-m').css('background', 'transparent')
+		$('#menu-button').css('filter', 'invert()')
 	}
 })
 
@@ -26,15 +28,17 @@ function section(id, lower) {
 }
 
 function showTabs() {
+	$('body, html').css('overflow-y', 'hidden')
 	$('#tabs-m').animate({ padding: '30px' }, 0);
 	$('#tabs-m').animate({ height: screen.height }, 200);
 	if ($('html').scrollTop() < 640) {
-		$('#menu, #tabs-m').css('background', 'rgba(0, 0, 0, 0.3)')
+		$('#menu, #tabs-m').css('background', 'rgba(0, 0, 0, 0.6)')
 	}
 	$('#menu-button').attr('href', 'javascript:hideTabs()');
 }
 
 function hideTabs() {
+	$('body, html').css('overflow-y', 'scroll')
 	if ($('html').scrollTop() < 640) {
 		$('#menu, #tabs-m').css('background', 'transparent')
 	}
