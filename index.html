@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/universal.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<div id="menu">
+        <a href="https://github.com/tayinde"><img id="github-logo" src="images/github-logo.png" width="40"></a>
+        <a href="https://github.com/tayinde" id="username">tayinde</a>
+		<span id="tabs">
+			<a id="first-tab" href="javascript:section('body', false)" class="tab">Home</a>
+            <a href="javascript:section('#experience-section', true)" class="tab">Experience</a>
+			<a href="javascript:section('#about-section', true)" class="tab">About</a>
+			<a href="javascript:section('#contact-section', true)" class="tab">Contact</a>
+		</span>
+		<span id="tabs-m">
+			<a id="first-tab" href="javascript:section('body', false)" class="tab">Home</a>
+            <a href="javascript:section('#experience-section', true)" class="tab">Experience</a>
+			<a href="javascript:section('#about-section', true)" class="tab">About</a>
+			<a href="/" class="tab">Contact</a>
+		</span>
+		<a id="menu-button" href="javascript:showTabs();">
+			<img src="images/menu-button.png" width="30" />
+		</a>
+	</div>
+    
+    <div id="bg"></div>
+    <h1 id="name">
+        Tobi Ayinde<br>
+        <span id="programmer">Programmer</span>
+    </h1>
+    
+    <div id="experience-section">
+        <h1 class="header margin-auto">Experience</h1>
+        <p class="paragraph">My primary languages are C#, Javascript, and Python. I also have some experience with C++.</p>
+    
+        <div class="container align-center" style="height: 300px">
+            <div class="language">
+                <img src="images/js.png" class="icon" width="70"><br>
+                Javascript was one of the first languages I learned and I have made a few projects using Node.js. Sometimes just making scripts in the console is also fun to do.
+            </div>
+            <div class="language">
+                <img src="images/python.png" class="icon" width="70"><br>
+                I also have experience with Python and I use it commonly for making things easier to do. It's also the first language I used when learning competitve programming.
+            </div>
+            <div class="language">
+                <img src="images/csharp.png" class="icon" width="70"><br>
+                C# currently is my favorite language because of its structure and syntax. What I would call my <a href="https://github.com/tayinde/topics">best project</a> is written with .NET Core in C#.
+            </div>
+            <div class="language">
+                <img src="images/cpp.svg" class="icon" width="70"><br>
+                I learned C++ while on a school robotics team and haven't used it for a while until recently. Definitely not my favorite language but it at least compiles fast which I like. 
+            </div>
+        </div>
+    </div>
+    <div id="about-section">
+        <h1 class="header white border-light-blue margin-auto">About me</h1>
+        <div class="container align-center">
+            <div class="picture margin-auto" id="picture-of-me"></div>
+            <p class="paragraph" id="about-paragraph">
+                In my free time I like to program obviously and play around with different languages at times.
+                I got interested in coding from playing games, even though I haven't done game development yet.
+                I also like playing games like Clash Royale and Call of Duty Mobile in my free time.
+                Occasionally I like to solve Rubik's cubes in for fun. 
+                In the past I was very active in cubing but now I do it a little less as I've found other interests.
+                Another thing about me is that I was born in Canada to Nigerian parents, though I only lived in Canada for a year.
+            </p>
+        </div>
+    </div>
+    <div id="contact-section">
+        <h1 class="header white border-darkish-blue margin-auto">Contacts</h1>
+        <div class="container align-center">
+            <span class="social-surrounding"><img src="images/instagram-logo.png" class="social-icon"> ta334__</span>
+            <span class="copied">Copied to clipboard</span>
+            <span class="social-surrounding social-icon-right"><img src="images/discord-logo.png" class="social-icon"> B4B4TUND3#9960</span>
+            <span class="copied">Copied to clipboard</span>
+            <span class="social-surrounding social-icon-right"><img src="images/email-icon.png" class="social-icon"> tbiayinde@gmail.com</span>
+            <span class="copied">Copied to clipboard</span>
+        </div>
+        <div class="container align-center">
+            <span class="social-surrounding"><img src="images/github-logo.png" class="social-icon"> tayinde</span>
+            <span class="copied">Copied to clipboard</span>
+            <span class="social-surrounding social-icon-right"><img src="images/stackoverflow-icon.png" class="social-icon"> t a</span>
+            <span class="copied">Copied to clipboard</span>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <script src="js/home.js" asp-append-version="true"></script>
+	<script src="js/menu.js" asp-append-version="true"></script>
+</body>
+</html>

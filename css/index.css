@@ -1,0 +1,250 @@
+#name {
+    font-family: "Quicksand";
+	text-align: center;
+	width: 100%;
+	top: 200px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	z-index: 101;
+	color: rgb(44, 67, 88);
+	pointer-events: none;
+}
+
+#programmer {
+    font-size: 30px;
+    font-family: "Abel";
+    color: rgb(117, 146, 167);
+}
+
+#menu {
+	position: fixed;
+	margin-top: 0px;
+	height: 60px;
+	width: 100%;
+	padding-top: 20px;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	background-color: transparent;
+	transition: 0.5s;
+}
+
+#github-logo {
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+#username {
+    margin-left: 10px;
+	margin-top: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+    font-family: "Abel";
+	transition: 0.2s;
+	display: inline-block;
+	border-bottom: 0px solid transparent;
+	border-width: 1px;
+	pointer-events: all;
+}
+
+#username:hover {
+    color: grey;;
+}
+
+#menu-button {
+	pointer-events: all;
+	display: none;
+}
+
+#logo {
+	position: fixed;
+	margin-left: 20px;
+	margin-top: -10px;
+	display: inline-block;
+}
+
+#first-tab {
+	margin-left: 20px;
+}
+
+.language {
+    pointer-events: all;
+    width: 200px;
+    line-height: 1.7;
+    font-size: 14px;
+    color: black !important;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.language:hover {
+    background: rgb(231, 231, 231);
+    margin-bottom: 20px;
+    box-shadow: 7px 7px 7px rgb(0, 0, 0, 0.1);
+}
+
+.icon {
+    pointer-events: all;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.margin-top-100 {
+    margin-top: 50px;
+}
+
+.social-icon {
+    filter: invert();
+    height: 25px;
+    margin-right: 10px;
+}
+
+.social-icon-right {
+    margin-left: 10px;
+}
+
+.social-surrounding {
+    color: darkblue;
+    margin-top: 30px;
+    display: inherit;
+    background: rgb(121, 213, 255);
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+}
+
+.copied {
+    width: 0px;
+    opacity: 0;
+    display: block;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+    color: rgb(0, 90, 45);
+}
+
+.social-surrounding:hover {
+    background: #27bbff;
+}
+
+.icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.tab {
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+    font-family: "Abel";
+	transition: 0.2s;
+	display: inline-block;
+	border-bottom: 0px solid transparent;
+	border-width: 1px;
+	pointer-events: all;
+}
+
+.tab:hover {
+	color: turquoise;
+	border-bottom: 1px solid turquoise;
+}
+#bg {
+    background: url(../images/background.svg);
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position-y: -100px;
+    background-position-x: -100px;
+    animation: move-around;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+	margin-top: 100px;
+	width: 100vw;
+	height: 800px;
+	top: -100px;
+	position: relative;
+	z-index: 100;
+	text-align: center;
+	pointer-events: none;
+}
+
+#contact-section span:hover {
+    cursor: pointer;
+}
+
+#experience-section, #about-section, #contact-section {
+	pointer-events: all;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: whitesmoke;
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 300px;
+    margin-top: 10px;
+	display: block;
+}
+
+#contact-section {
+    background: #00aaf8;
+    height: 200px;
+    padding-top: 100px;
+}
+
+#experience-section {
+    margin-top: -90px;
+}
+
+#about-section {
+    background: rgb(24, 89, 150);
+}
+
+.border-light-blue {
+    border-color: rgb(103, 181, 255);
+}
+
+.border-darkish-blue {
+    border-color: rgb(0, 104, 202);
+}
+
+.picture {
+	border-radius: 20px;
+	width: 300px;
+    height: 400px;
+    box-shadow: 15px 15px 15px rgb(0, 0, 0, 0.4);
+}
+
+#picture-of-me {
+    background: url(../images/me.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+    background-color: blue;
+}
+
+.paragraph {
+	line-height: 2;
+	font-size: 18px;
+    font-family: "Abel";
+	width: 800px;
+	color: grey;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about-paragraph {
+    color: whitesmoke;
+    font-weight: normal;
+    margin-left: 50px;
+    text-align: left;
+    width: 500px;
+}
