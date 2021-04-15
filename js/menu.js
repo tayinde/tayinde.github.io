@@ -25,6 +25,7 @@ function section(id, lower) {
     } else {
         location.href = onLocalComputer ? `./index.html#${id}` : '/#' + id ;
     }
+	hideTabs()
 }
 
 function showTabs() {
@@ -46,3 +47,7 @@ function hideTabs() {
 	$('#tabs-m').animate({ padding: '0px' }, 0);
 	$('#menu-button').attr('href', 'javascript:showTabs()');
 }
+
+$(window).click((event) => {
+	if (event.pageY > 60) hideTabs();
+})
