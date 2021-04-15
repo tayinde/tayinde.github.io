@@ -117,7 +117,7 @@ a {
 
 	#tabs { display: none; }
 	.tab, #tabs-m { display: block !important; }
-	#tabs-m {line-height: 3; margin-top: 24px;}
+	#tabs-m {line-height: 3; margin-top: 25px;}
 
 	#name {
 		margin-top: 50px;
