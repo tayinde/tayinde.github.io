@@ -82,6 +82,17 @@
     padding: 20px;
 }
 
+#laptop {
+    display: inline-block;
+    margin-bottom: -15px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/laptop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .language:hover {
     background: rgb(231, 231, 231);
     margin-bottom: 20px;
