@@ -130,12 +130,14 @@ a {
 
 	#experience-section {
 		height: 1100px !important;
-		padding-top: 100px;
-		padding-bottom: 420px;
+		padding-top: 70px !important;
+		padding-bottom: 250px !important;
 	}
 
 	#about-section {
-		height: 870px !important;
+		height: 800px !important;
+		padding-top: 50px !important;
+		padding-bottom: 350px !important;
 	}
 
 	#about-paragraph {
